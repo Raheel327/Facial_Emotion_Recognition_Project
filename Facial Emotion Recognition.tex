@@ -1,0 +1,143 @@
+\documentclass{ieeeaccess}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+\title{Deep Learning Model for Facial Emotion Recognition using TensorFlow, Kera’s & Pandas Packages}
+\author
+{\uppercase{Raheel Ahmad},\uppercase{ Bilawal Khan Jadoon},\uppercase{ Aqsa Khan}}
+\address {MS-AI Students, Sino-Pak Center for Artificial Intelligence (SPCAI), Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology (PAF-IAST).}
+
+\begin{abstract}
+A small CNN model for face expression recognition is proposed. The low-quality image database has more low-intensity expressions, which are difficult to discern with low image resolution. Face recognition data collecting is costly and time consuming. Using photographs collected from the internet may improve model training for expression recognition. We added datasets to better facial expression recognition training, each representing a different data source. Moreover, all dataset we obtained is labelled differently to assure the annotation quality. It would be difficult to distinguish between different people's expressions. This project creates an Emotions Detection Algorithm to detect emotion from images. Face is among the most powerful, natural, and universal ways humans express their emotions and intentions. As a result of the frame-to-sequence approach, public benchmarking databases are more accurate. There are six typical facial expressions: anger, fear, joy emotion. A deep emotion recognition system requires a large amount of labelled training data from as many populations and contexts as possible. Behaviors, acts, positions, facial expressions, and words are considered emotional conduits. Extensive research has been done on these pathways and emotions. This research describes a prototype system that can automatically recognize facial expression. Thus, using neural networks and visual processing, the universal emotions of pleasure, sadness, anger, disgust, surprise, and fear are classified. The prototype system accepts colored frontal face photos. After the face is recognized, an image processing method is performed to extract selected feature points. Finally, the neural network uses a collection of values extracted from the retrieved feature points to recognize the emotion. Pre-processing, deep feature learning, and deep feature categorization are the three essential processes in autonomous deep FER.
+\end{abstract}
+
+\begin{keywords}
+Artificial Intelligence (AI),Python Programming, Convolutional Neural Network (CNN), Tensor-Flow, OpenCV, Deep Learning, Pre-trained Modeling (Transfer Learning), Kera’s & Pandas Packages
+\end{keywords}
+
+\titlepgskip=-15pt
+\maketitle
+
+\section{Introduction}
+\label{sec:introduction}
+\PARstart{E}{motions},include feelings, ideas, behavior, pleasure & displeasure. Motive and mood are often linked with emotion.
+Psychology, neurology, sociology of emotion, and computer science have all contributed to emotion research in the last two decades. There are several ideas that try to explain the creation, neurology, perception, and function of emotions. The production of materials that excite and generate emotion is a current field of emotion study. PET and fMRI scans also help research the brain's emotive picture processes.
+"Emotions are defined as a happy or negative experience linked to a physiological activity pattern." Emotions alter physiology, behaviour, and intelligence. 
+In some beliefs, emotion includes thinking. While someone responding primarily on emotion may not appear to be thinking, mental processes are nevertheless important, especially in different features. For example, realizing we are in a risky position and rousing our nervous system (fast heartbeat and respiration, perspiration, muscle tightness) is part of the sensation of fear. Others argue that emotion is distinct from and can accompany knowledge. A conscious emotion is a symbolic activity of a previous experience linked to a subjective state of happiness or unhappiness. The content states typically generated through verbal descriptions of internal states.
+Complex emotions Some theories say they are emotional states that cause physiological changes that affect our behaviour. Emotional physiology is tightly linked to nervous system arousal, with varying levels of arousal corresponding to different emotions.  Positive or negative emotions typically drive motivation. Others argue that emotions are essentially syndromes of components, including motivation, feelings, behaviour, and physiological changes, none of which are the emotion. Emotion is now said to include all components. The components of emotion are classified differently by academic disciplines. Emotion is a subjective, aware experience that is defined by psychophysiological expressions, bodily reactions, and mental states. Sociology uses a multi-component explanation of emotion. Affective states include biological elements, culturally or behavioral labels (anger, surprise, etc.), expressive body behaviour, and situational appraisals.
+The term "artificial intelligence" (AI) can mean many different things. Applied artificial intelligence is a branch of computer science that focuses on solving memory issues like learn, solving problems, and pattern recognition that are common to humans. Although "AI" is commonly used to refer to robots or future scenarios, the term actually refers to modern-day advanced computer science and goes much beyond science fiction's robots. Professor Pedro Domingo, a well-known researcher in this area, describes the "five tribes" of machine learning, which include symbolists, with roots in logic and philosophy, connectionists, with roots in neuroscience, revolutionaries, with roots in evolutionary biology, and Bayesians, with roots in statistics and probability, as well as analogies with psychological origins. Bayesians have recently been effective in advancing the science of statistical computation under the label "machine learning" due to recent breakthroughs in the effectiveness of statistical computation. "Deep learning" is an area of network computation that has been developed by connectionists. Computer science topics such as deep learning (DL) and machine learning (ML) can be traced back to the field of artificial intelligence (AI).
+Due to artificial intelligence, it is possible for machines to learn from their previous experience, adaptable to changes inputs, and perform human-like tasks (AI). There are many examples of AI today, from chess-playing robots to self-driving cars, that use deep learning and natural language processing (NLP). Computers may now be taught to execute certain tasks by analysing large amounts of data and looking for patterns.
+Artificial intelligence (AI) techniques such as "deep learning" educate computers to learn by doing, similar to how humans spontaneously acquire new skills. The ability of driverless automobiles to detect a stop sign or a person from a lamppost is largely due to the use of deep learning technologies. To use voice control on smartphones, tablets, TVs and hands-free speakers you need this technology. Recently, there has been a lot of discussion on the benefits of deep learning. Results that were once impossible are now being achieved. Classification tasks can be learned directly from pictures, text, or voice in a process known as "deep learning." Accuracy levels that surpass those of humans can be achieved by using deep learning models. A significant amount of labelled data and neural network topologies with multiple layers are used to train models.
+
+\section{Literature review}
+Using powerful picture processing, software can "read" the emotions on a human face. To learn more about what an image or video of a person's face informs us about how he/she is feeling, companies have been experimenting with advanced algorithms and image processing techniques developed in the last decade.
+To keep physically distinct, most schools throughout the world started online education classes as a teaching approach, but there is no direct, timely instruction and effective contact and feedback between teacher and students. In face-to-face physical education, the teacher can examine the students' facial features. This activity suggests an online course simulation system that blends a face expression recognition (FER) algorithm with online course forums. The FER algorithm classified student facial expressions captured by cameras into eight groups. This strategy works well in a classroom of 27 children with some separation. This structure can also be utilized for line meetings. We create a framework for analyzing learner emotions using a deep learning model based on CNN architecture. The proposed framework categorized emotions as anger, disgust, fear, happiness, sadness, surprise & neutral. Recognize emotional expressions using facial landmarks and EEG. To collect the ten virtual landmarks placed on the subject's face, users must wear an EPOC + headset with a face camera. The technology can detect emotions in 99.81\% of face landmarks and 87.25\% of EEG signals. Emotion detection provides real-time monitoring of disabled patients. The technology works well in dim light and on all skin tones. Images are best represented by CNN. CNN features are the most discriminatory, allowing for improved performance. Convolutional Neural Networks (VGG16) model produces pre-trained feature in deep neural networks categorization. The proposed algorithm model provides 81.36 percent accuracy with facial detection and 86.04 percent accuracy without it. Many healthcare and development companies have developed face recognition software as a database. FACS was a method of evaluating facial muscles (action units) to track changes in facial features (AU). Recognizing appropriate expressions from many sources might be difficult. To tackle this difficulty, the circle-emotion-colored relationship is used to get the proper feeling behind a photo input (image input). The image will be pre-processed and then read pixel by pixel. Combining these data-based circles creates a new hue. The resulting hue will be linked to an emotion. Your results will be based on psychological theories. Predicting a person's emotions using facial expressions, video frames, etc. This can also be utilized to evaluate a film-related public option via social media. Facial recognition, facial feature extraction, and emotion categorization are the three main areas of recent work that are pertinent to our investigation. A large amount of research has been done on these topics, and it's noteworthy.
+\section{Research methodology}
+In order to get started on my project, I gathered all of the necessary data and saved it on my computer. A convolutional neural network (CNN) is used to process each image in a test dataset in the sequence of matrix creation. In order to get a more accurate prediction, I'll have to construct a smaller matrix, which will take more time to train, but it'll be worth it in the long run. Finally, the trained dataset is saved in a python corresponding file after the convolution, pooling, and flattening processes.
+Following a same convolutional neural network (CNN) method, test data is also compared to the stored dataset values in python file, and lastly, the facial emotion and accuracy value is predicted.
+I'll be able to predict more accurately the more data I have to work with. The basic seven facial emotions of angry, happiness, fear, disgust, surprise, sad, and neutral will be all use for this project.
+\begin{figure}[h]
+\centering
+\includegraphics{block.png}
+\caption{Project Block Diagram.}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics{emotionssss.png}
+\caption{Emotions Used in this Project.}
+\end{figure}
+
+\subsection{Convolution Neural Network}
+Convolutional networks, often known as CNNs or ConvNets, are a type of deep neural network. It's a deep neural network. Multi-layer perceptron’s (MLPs) are the classic deep learning models. The models are named "feed-forward" because data is fed into them. Generally, in CNN there are no feedback links where the model's outputs flow back into it.
+Machines and CNNs both leverage the concept of specialized components within a system with distinct duties.
+Fully connected CNN have been a major influence in computer vision. They outperformed standard computer vision and offered cutting-edge findings. Image classification, object identification, segmentation, face recognition, Self-driving automobiles that use CNN based vision systems. 
+\textbf{Steps in Convolution Neural Network}
+1- Convolution is the process of transforming raw data into feature maps. 2D convolution is a straightforward process. Starting with a kernel, which is just a weighted matrix. That is, it “slides” over the 2D input data, multiplying the results element by element with the part of the input it is now on.
+2-	Pooling is a sort of down sampling where we select a region, pick the highest value in that region, and use that as the newly picked value for the region. Pooling layer after nonlinear layer It down samples the image's width and height. In this way, image size is minimized. A detailed picture is no longer necessary for further processing if some features (Like boundaries) have already been discovered in prior convolution operations. After finishing convolutional, nonlinear, and pooling layers, attach a fully linked layer. This layer receives convolutional network output. Attaching a completely connected layer to the network's end produces an N-dimensional vectors, where N is the number of classes the model can choose from.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=8.5cm]{Conv.png}
+\caption{architecture for CNN.}
+\end{figure}
+
+\subsection{Deep Learning Packages}
+Tensor Flow, CNTK, or Theano can all be used with Kera’s, a high-level neural network API developed in Python. It was built with the goal of facilitating rapid experimentation in mind. The ability to move quickly from a concept to a conclusion is essential to conducting successful research.
+Allows for fast and easy development of deep learning applications.  This software is able to run on both a computer's CPU and a graphics processing unit (GPU).
+The Kera’s API is built for humans, not machines. It emphasizes the importance of the user's experience. Best practices in cognitive load reduction are maintained to by karas, which delivers consistent & easy APIs, minimizes user activities necessary for typical use cases, and gives direct and clear output upon operator error.
+Pandas is an open source, BSD-licensed package that provides high-performance data analysis & data structures and capabilities for Python. NumFOCUS is sponsoring an effort to breed pandas. Pandas will be a world-class open-source project because of this, and it's now feasible to contribute financially. The following is the rest of this document. Section 2 is devoted to the region's related work, while Section 3 outlines potential frameworks for future study in the subject. Collection of Datasets is addressed in Section 4. Parameterized efficiency restrictions are the subject of Section 5. Experimentation on the dataset is covered in last Sections. 
+\subsection{Model Training & Final model building}
+In order to train the model first of all datasets is collected from Kaggle challenge. The data contain contains 48×48 pixel greyscale images with two folders one with name of training set & other with test set. The training folder consist of 7 subfolders with 7 categories and their accumulative sum approximately 28,709. Similarly for the test set contained all seven categories & total no of test images 3589 etc. 
+The ratio of human angry face images is 3995 in training & 958 in test sets.  For disgust human face is 436 training & 111 images for testing. Furthermore, accumulative sum of remaining fear human face is (4097 + 1024), happy human face is (7215+1774) & neutral human face is (4965+1233) etc. 
+In order to train the model each of 7 categories converted to numbers starting from 0 to 6. One could use the built-in transfer learning model of MobileNetV2() with applications of karas & TensorFlow. After training & fitting model system is run for approximately 30 iterations. To, check accuracy of the model adam optimizer used for this purpose. Once training and testing is done Real time camera used to detect the images of facial expression. This done by availability of Opencv that used to solve computer vision problems etc. 
+
+\subsection{Applications}
+1- Our goal is to create a system that can evaluate a photograph and predict the person's facial expression. It is more advantageous for police personnel to anticipate the thoughts and emotions of convicts and criminals through the creation of this software
+2- Doctors can utilise this technology to forecast the facial expressions of autistic youngsters.
+3- This research could be used to anticipate a person's emotional state based on facial images, video frames, and other visual cues.
+4- This can also be used to assess public opinion on a particular film based on social media video reaction posts.
+
+\subsection{Challenges}
+1- Data collection for facial emotion recognition is time consuming & costly
+2- Low quality images are difficult to read and accuracy low for such images.
+3- Peoples with low quality CPU need more and more time to process the initial stages data for training. 
+4- With Less no of iterations, the model accuracy would not acceptable, and loss become maximum.
+5- Problems of over-fitting occur when train and test data is imbalance or less data used to train model with low quality gray-scale images. 
+6- It would be extremely difficult to discern a person's exact emotion from the wide range of expressions they use. An Emotion Detection Model is used to extract emotions from images in this research.
+
+\section{Results and discussions}
+All seven of the most basic face expressions are correctly predicted. Despite this, we were able to get an accuracy of roughly 86\%, but there are still some issues due to a lack of datasets and the diverse face features of people in different nations. Because our company's supercomputer can only access a limited number of datasets, I proceed with the training of the datasets I have already collected. Images from the internet, as well as my own family photos, were also used to make predictions.
+In the previous FER projects, there was no scheme to capture the live camera images but, in our case, we attached deep face library for live camera access to differentiate between various human expressions.  On the other hand, system was initially trained on gray-scale images both in training and testing, but system modified for RGB images with high dimensionality.
+\begin{figure}[h]
+\centering
+\includegraphics[width=4.5cm]{happy.png}
+\caption{Happy Human Face}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4.5cm]{Neutral.png}
+\caption{Neutral Human Face}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=4.5cm]{Angry.jpg}
+\caption{Angry Human Face}
+\end{figure}
+
+\section{Conclusion}
+Using facial expressions to characterize human emotions, I investigated a novel method of doing so in this research. The seven universal emotions of joy, sad, rage, disgust, astonishment, fear and neutral were classified using a conventional neural network-based method. The seven universal emotions are: joy, sadness, frustration, disgust, surprise.
+In the beginning, two-dimensional convolutions are applied to the input image, followed by the pooling, flattening, and storage of the train dataset. Finally, the test image is quantified in terms that is saved in the final mode file that contains the trained dataset, and the facial emotions are predicted.
+The project is still under progress, and it is expected to yield positive results in the domain of emotion recognition in the near future.
+
+\newpage
+\begin{thebibliography}{00}
+
+\bibitem{b1} https://www.kaggle.com/msambare/fer2013
+
+\bibitem{b2} https://pythonprogramming.net/convolutional-neural-network-cnn-machine-learning-tutorial/
+
+\bibitem{b3} https://www.researchgate.net/publication/323471647-Emotion-Detection-using-Image-Processing-in-python/
+
+\bibitem{b4} https://towardsdatascience.com/face-detection-recognition-and-emotion-detection-in-8-lines-of-code-b2ce32d4d5de/
+
+\bibitem{b5} https://link.springer.com/article/10.1007/s42452-020-2234-1
+
+\bibitem{b6} https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-8-16 
+
+\bibitem{b7} Hassouneh, Aya, A. M. Mutawa, and M. Murugappan. "Development of a real-time emotion recognition system using facial expressions and EEG based on machine learning and deep neural network methods." Informatics in Medicine Unlocked 20 (2020): 100372.
+
+\bibitem{b8} Bodapati, Jyostna Devi, and N. Veeranjaneyulu. "Facial emotion recognition using deep CNN based features." International Journal of Innovative Technology and Exploring Engineering (IJITEE) ISSN (2019): 2278-3075.
+
+\bibitem{b9} Mellouk, Wafa, and Wahida Handouzi. "Facial emotion recognition using deep learning: review and insights." Procedia Computer Science 175 (2020): 689-694.
+\end{thebibliography}
+\EOD
+\end{document}
